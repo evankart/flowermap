@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Footer } from "./components/Footer";
+import { Map } from "./components/Map";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app" className="bg-slate-700  text-red-400 ">
+      <h1>flowerMap</h1>
+      <Map className="bg-red-900 h-[300px] w-[500px]" />
+      <p className="max-w-xl text-center mx-auto my-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut at quae ex
+        sapiente delectus praesentium commodi illo, beatae fugiat adipisci
+        voluptatibus ipsam officia ratione neque, dignissimos officiis similique
+        laborum quas.
+      </p>
+      <Footer />
     </div>
   );
 }
